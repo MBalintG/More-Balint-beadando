@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+  }
+  
+  /* Kisméretű készülékekre (pl. mobiltelefonok) */
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  /* Közepes méretű készülékekre (pl. tablet) */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      width: 80%;
+    }
+  }
+  
+  /* Nagy méretű készülékekre (pl. asztali számítógépek) */
+  @media screen and (min-width: 1025px) {
+    .container {
+      width: 70%;
+    }
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
