@@ -1,8 +1,8 @@
 
 <mat-toolbar color="primary" class="app-toolbar" [ngClass]="{'sticky-toolbar': isSticky}">
-  <span>Angular Material App</span>
+  <span>Kaja honlap</span>
   <button mat-icon-button (click)="toggleMenu()" *ngIf="isMobile">
-    <mat-icon>menu</mat-icon>
+    <mat-icon>menÜ</mat-icon>
   </button>
   <div class="menu-items" [ngClass]="{'show-menu': isMenuOpen}">
     
@@ -39,6 +39,7 @@
     <button (click)="removeFavorite(favorite.id)">Kedvencből törlés</button>
   </div>
 </div>
+
 
   <div *ngFor="let food of filteredFoods" class="category">
     <h2>{{ getCategoryName(food) }}</h2>
